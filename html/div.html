@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturando seu HTML + Formatações</title>
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color:red ;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Dio<span>.</span>me</p>
+    <div id='menu-lateral'>
+        <div id="links">
+            <ul>
+                <li><a href=""></a>Link</li>
+                <li><a href=""></a>Link</li>
+                <li><a href=""></a>Link</li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+
+
+    <h3>Forumlário de Cadastro</h3>
+    <p>Vamos trabalhar com fieldset</p>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label for="">Nome: </label>
+                <input type="text">
+                <label for="">E-mail: </label>
+                <input type="email">
+            </div>
+            <div class="row">
+                <label for="">Profissão: </label>
+                <input type="text">
+                <label for="">Empresa: </label>
+                <input type="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label for="">Endereço: </label>
+                <input type="text">
+                <label for="">Número: </label>
+                <input type="number">
+            </div>
+            <div class="row">
+                <label for="">Bairro: </label>
+                <input type="text">
+            </div>
+            <div class="row">
+                <label for="">Cidade/UF: </label>
+                <input type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações de contato</legend>
+
+            <div class="row">
+                <label for="">Celular: </label>
+                <input type="tel">
+                <label for="">Telefone: </label>
+                <input type="tel">
+            </div>
+            <div class="row">
+                <label for="">Linkedin: </label>
+                <input type="text">
+                <label for="">Github: </label>
+                <input type="email">
+            </div>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h2>Embed vs Iframes</h2>
+    <p>aqui tem uma tag embed, mas eu não vou baixar vídeo para colocar aqui não, então vou jogar como código</p>
+    
+        <p>&ltembed src="#conteudo do vídeo" type="video/mp4" width="100px" height="100px"&gt</p>
+    <p><span>Lorem de cria</span>: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni dolorum repudiandae quas reiciendis placeat animi eius fuga et ipsum a officiis quod quisquam voluptas fugit vel at, ducimus quam pariatur?</p>
+    <p>Mais um lorem de cria: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident, molestias fuga soluta quia accusantium repellat eligendi rerum magnam velit autem doloribus eaque dolore aliquam incidunt fugit nihil placeat earum!</p>
+
+    <p>Agora vamos usar um iframe</p>
+    <iframe src="https://www.youtube.com/watch?v=qvAT_fDlieM" frameborder="0"></iframe>
+
+</body>
+
+</html>
